@@ -1,3 +1,4 @@
+package HomeWork_2;
 //1. Написать метод, возвращающий количество чётных элементов массива.
 //
 //countEvens([2, 1, 2, 3, 4]) → 3
@@ -6,14 +7,14 @@
 
 public class Task_1 {
     public static void main(String[] args) {
-        int[] nums = { 2, 1, 2, 3, 4};
-        System.out.println(countEvents(nums));
+        int[] arr = {2, 1, 2, 3, 4};
+        System.out.println(countEvents(arr));
     }
 
-    public static int countEvents(int[] nums) {
+    public static int countEvents(int[] arr) {
         int count = 0;
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] % 2 == 0) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 == 0) {
                 count++;
             }
         }
