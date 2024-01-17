@@ -6,16 +6,17 @@
 
 public class Task_1 {
     public static void main(String[] args) {
-        System.out.println(countEvents);
+        int[] nums = { 2, 1, 2, 3, 4};
+        System.out.println(countEvents(nums));
     }
 
-    public int countEvents(int[] nums) {
+    public static int countEvents(int[] nums) {
         int count = 0;
-        for (int i = 0; i < ; i++) {
+        for (int i = 0; i < nums.length; i++) {
             if (nums[i] % 2 == 0) {
                 count++;
             }
         }
-        return count
+        return count;
     }
 }
